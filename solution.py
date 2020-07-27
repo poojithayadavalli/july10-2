@@ -8,7 +8,7 @@ def display(head):
     while head:
         l.append(str(head.data))
         head=head.next
-    print("  ".join(l))
+    print(" ".join(l))
 def linkedlist(arr):
     head=head1=Node(arr[0])
     for i in range(1,len(arr)):
@@ -22,7 +22,7 @@ def deleteNode(head,val):
     if temp!=None:
         temp.next=temp.next.next
         
-arr=list(map(int,input()))
+arr=list(map(int,input().split()))
 val=int(input())
 head=linkedlist(arr)
 deleteNode(head,val)
